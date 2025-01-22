@@ -1,7 +1,7 @@
 # AWS
  CI/CD implementation  
  
-1- Use GitHub as VCS. Codecommit can be used instead of GitHub. Since CodeCommit can't be used anymore GitHub choosen
+- Use GitHub as VCS. Codecommit can be used instead of GitHub. Since CodeCommit can't be used anymore GitHub choosen
 2- A Python app created and pushed into GitHub
 3- Go to "CodeBuild" service section from AWS Console
    4- Click "Create project". Project Name:  <python-app-build>
