@@ -86,8 +86,9 @@
  - Install CodeDeploy agent to EC2 instance.
       - Login to EC2 instance
       - Go documentation for CodeDeploy agent installation in AWS website. Apply all steps
- - Give permission to EC2 instance for to talk CodeDeploy. Create a serivce role and attach the policy
+ - Give permission to EC2 instance for to talk CodeDeploy. Create a service role and attach the policy
       - Go to IAM. Click Roles
       - Click create a new role
       - Select CodeDeploy from service list for permission. click next
-      - Give the role name and then click "Create Role"  
+      - Give the role name and then click "Create Role"
+ - Assign this role to EC2 instance.Go to EC2 instance. "Select actions" Choose "Security" and "Modify IAM Role"  
