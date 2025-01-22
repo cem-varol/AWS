@@ -9,9 +9,9 @@
 - Do relevant settings for GitHub connection. Provide PAT.
 - Choose "On-Demand" "Managed image" "EC2", "OS" options from "Environment" section
 - CodeBuild should use a Role for to access this EC2 instance. Select "New service role" option and give the name <codebuild-python-app-build-service-role>
-   9- Write the yaml definiton of BuildSpec file
-      - Click "Switch to editor"
-      - insert following build yaml:
+- Write the yaml definiton of BuildSpec file
+- Click "Switch to editor"
+- insert following build yaml:
 
 --------------------------------------------------------------------------------------------------------------
             version: 0.2
