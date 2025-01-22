@@ -43,7 +43,7 @@
 
 
    --------------------------------------------------------------------------------------------------------
-10- Use AWS System Manager to store Docker Hub credentials
+- Use AWS System Manager to store Docker Hub credentials
         - go to "Parameter Store"
         - add: 	
 	       /python-app/doker-credentials/username
@@ -53,8 +53,8 @@
 		/python-app/doker-credentials/url
 
 
-11- Click "create project"
+- Click "create project"
 
-12- Click "Start Build" and observe the results. 
+- Click "Start Build" and observe the results. 
    
  
