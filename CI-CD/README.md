@@ -1,5 +1,7 @@
 # AWS
  CI/CD implementation  
+
+ CI PART-I: CREATE A CODEBUILD PROJECT FOR BULDING AND CREATING DOCKER IMAGE
  
 - Use GitHub as VCS. Codecommit can be used instead of GitHub. Since CodeCommit can't be used anymore GitHub choosen
 - A Python app created and pushed into GitHub
@@ -55,8 +57,10 @@
 - Click "create project"
 
 - Click "Start Build" and observe the results. 
-   
- INTEGRATE WITH CodePipeline:
+
+
+ CI PART-II: CREATE A PIPELİNE AS ORCHESTRATOR  
+ INTEGRATE WITH CodeBuild:
 
  - Go to CodePipeline page from AWS Console
  - Give pipeline name as "python-app-pipeline"
@@ -67,5 +71,23 @@
  - Skip other stages and click "Create Pipeline"
  - Now Github, CodePipeline and CodeBuild integration was made
  - Commit a new source code to git repo. This new code code commit should triggger entire build process
- - We are done !! 
+ - We are done !!
+
  
+
+ CD PART: CREATE A CODEDEPLOY PROJECT AND INTEGRATE WITH INTEGRATE WITH CodePipeline:
+
+ - Go to CodeDeploy section in AWS Console
+ - Click "Create Application". Give app name as "python-app-deploy"
+ - Choose compute platform as "EC2/On-premises"
+ - Click on create application
+ - Create an EC2 instance as  deployment target
+ - Give a tag to EC2 instance for CodePipeline to identify this machine
+ - Install CodeDeploy agent to EC2 instance.
+      - Login to EC2 instance
+      - Go documentation for CodeDeploy agent installation in AWS website. Apply all steps
+ - Give permission to EC2 instance for to talk CodeDeploy. Create a serivce role and attach the policy
+      - Go to IAM. Click Roles
+      - Click create a new role
+      - Select CodeDeploy from service list for permission. click next
+      - Give the role name and then click "Create Role"  
