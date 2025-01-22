@@ -5,10 +5,10 @@
 - A Python app created and pushed into GitHub
 - Go to "CodeBuild" service section from AWS Console
 - Click "Create project". Project Name:  "python-app-build"
-- Select "Source" from drop-down <github>. Choose "Public Repository" option. Enter <cem-varol/AWS/blob/main/CI-CD>
+- Select "Source" from drop-down as "github". Choose "Public Repository" option. Enter <cem-varol/AWS/blob/main/CI-CD>
 - Do relevant settings for GitHub connection. Provide PAT.
 - Choose "On-Demand" "Managed image" "EC2", "OS" options from "Environment" section
-- CodeBuild should use a Role for to access this EC2 instance. Select "New service role" option and give the name <codebuild-python-app-build-service-role>
+- CodeBuild should use a Role for to access this EC2 instance. Select "New service role" option and give the name "codebuild-python-app-build-service-role"
 - Write the yaml definiton of BuildSpec file
 - Click "Switch to editor"
 - insert following build yaml:
