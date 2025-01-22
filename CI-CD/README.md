@@ -4,7 +4,7 @@
 - Use GitHub as VCS. Codecommit can be used instead of GitHub. Since CodeCommit can't be used anymore GitHub choosen
 - A Python app created and pushed into GitHub
 - Go to "CodeBuild" service section from AWS Console
-- Click "Create project". Project Name:  <python-app-build>
+- Click "Create project". Project Name:  "python-app-build"
 - Select "Source" from drop-down <github>. Choose "Public Repository" option. Enter <cem-varol/AWS/blob/main/CI-CD>
 - Do relevant settings for GitHub connection. Provide PAT.
 - Choose "On-Demand" "Managed image" "EC2", "OS" options from "Environment" section
