@@ -1,4 +1,4 @@
-# AWS
+# AWScodedeploy.amazonaws.com
  CI/CD implementation  
 
  CI PART-I: CREATE A CODEBUILD PROJECT FOR BULDING AND CREATING DOCKER IMAGE
@@ -91,4 +91,15 @@
       - Click create a new role
       - Select CodeDeploy from service list for permission. click next
       - Give the role name and then click "Create Role"
- - Assign this role to EC2 instance.Go to EC2 instance. "Select actions" Choose "Security" and "Modify IAM Role"  
+ - Assign this role to EC2 instance.Go to EC2 instance. "Select actions" Choose "Security" and "Modify IAM Role"
+ - Restart the agent service
+ - In CodeDeploy define created EC2 instance as target. Click "Create Deployment Group"
+ - Enter "Deployment Group Name" as "python-app-deployment"
+ - Use the same service role previously created.(Before this give EC2FullAcces policy to this service role)
+ - In "Environment Configuration" click "Amazon EC2" checkbox
+ - Enter the machine tag name | deployment-machine. Watch for "1 unique matched instance" warning
+ - Uncheck "Enable LoadBalancing" and "Create Deployment Group"
+ - Now click "Create Deployment"
+ - Choose deployment group "python-app-deployment"
+ - Choose "My application is on GitHub" option
+ - 
