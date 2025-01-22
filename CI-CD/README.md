@@ -102,4 +102,5 @@
  - Now click "Create Deployment"
  - Choose deployment group "python-app-deployment"
  - Choose "My application is on GitHub" option
- - 
+ - Give commit ID and click "Create Deployment"
+ - IMPORTANT: put apspec.yaml in the root of the repository.
