@@ -52,9 +52,20 @@
 	
 		/python-app/doker-credentials/url
 
-
 - Click "create project"
 
 - Click "Start Build" and observe the results. 
    
+ INTEGRATE WITH CodePipeline:
+
+ - Go to CodePipeline page from AWS Console
+ - Give pipeline name as "python-app-pipeline"
+ - Check "Allow AWS CodePipeline to create a service role.." checkbox
+ - Click Next and choose GitHub. Do all GitHub conncetion settings. Click Next
+ - Choose Build Provider as "AWS CodeBuild". Choose peroject as "python-app-code-build"
+ - Choose "single build"
+ - Skip other stages and click "Create Pipeline"
+ - Now Github, CodePipeline and CodeBuild integration was made
+ - Commit a new source code to git repo. This new code code commit should triggger entire build process
+ - We are done !! 
  
