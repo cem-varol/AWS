@@ -1,5 +1,4 @@
-# AWS Lambda Stale Resource Elemination
-
+# AWS Lambda Cloud Cost Optimization Project 
 This project is amied to find stale resources in AWS Cloud Infrastructure. 
 In the example scenario an instance was created by IAM user and after a while 
 a snapshot was taken by this user. Later then the instance was deleted but snapshot 
