@@ -1,5 +1,4 @@
-# AWS CodeDeploy-CodeBuilt-CodePipeline COMPLETE CI/CD SOLUTION
- CI/CD implementation  
+# COMPLETE CI/CD SOLUTION with AWS CodeDeploy-CodeBuilt-CodePipeline 
 
  CI PART-I: CREATE A CODEBUILD PROJECT FOR BULDING AND CREATING DOCKER IMAGE
  
