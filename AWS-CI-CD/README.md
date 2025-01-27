@@ -75,7 +75,7 @@
 
  
 
- CD PART: CREATE A CODEDEPLOY PROJECT AND INTEGRATE WITH INTEGRATE WITH CodePipeline:
+ CD PART: CREATE A CODEDEPLOY PROJECT AND INTEGRATE WITH CodePipeline:
 
  - Go to CodeDeploy section in AWS Console
  - Click "Create Application". Give app name as "python-app-deploy"
